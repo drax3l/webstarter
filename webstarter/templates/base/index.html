@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+    
+    {% if use_bootstrap %}
+    {% include "bootstrap/cdn.html" %}
+    {% endif %}
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="{% if dark_mode %}bg-dark text-white{% endif %}">
+    
+    <div class="container mt-5">
+        <header class="text-center mb-5">
+            <h1>Bienvenido a {{ title }}</h1>
+            <p class="lead">Proyecto generado profesionalmente con WebStarter CLI.</p>
+        </header>
+
+        <main>
+            </main>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

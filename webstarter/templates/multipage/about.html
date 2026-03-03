@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Nosotros - {{ title }}</title>
+    {% if use_bootstrap %}
+    {% include "bootstrap/cdn.html" %}
+    {% endif %}
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="{% if dark_mode %}bg-dark text-white{% endif %}">
+    <div class="container mt-5">
+        <h1>Sobre Nosotros</h1>
+        <p>Esta es una página secundaria generada automáticamente.</p>
+        <a href="index.html" class="btn btn-primary">Volver al Inicio</a>
+    </div>
+</body>
+</html>

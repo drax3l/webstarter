@@ -1,0 +1,1 @@
+console.log("WebStarter: ¡Proyecto cargado con éxito!");

@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "webstarter-cli"
+version = "0.1.0"
+description = "Herramienta CLI profesional para generar proyectos web HTML/CSS/JS."
+readme = "README.md"
+requires-python = ">=3.8"
+authors = [
+    {name = "Alex", email = "tu-email@ejemplo.com"} #
+]
+dependencies = [
+    "typer[all]",
+    "rich",
+    "jinja2",
+]
+
+[project.scripts]
+# Esto es lo que permite ejecutar 'webstarter' en la terminal
+webstarter = "webstarter.cli:app"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["webstarter*"]
+
+[tool.setuptools.package-data]
+# MEJORA: Asegura que TODAS las carpetas dentro de templates se incluyan en la instalación
+webstarter = ["templates/**/*", "templates/**/**/*"]

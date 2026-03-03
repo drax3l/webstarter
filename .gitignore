@@ -1,0 +1,44 @@
+# === Python (Archivos compilados y caché) ===
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.tox/
+.coverage
+*.db
+
+# === Distribución / Empaquetado ===
+# No subimos lo que PyPI ya tiene almacenado
+dist/
+build/
+*.egg-info/
+*.whl
+*.tar.gz
+
+# === Entornos Virtuales ===
+# Imprescindible ignorar para que otros creen el suyo
+.venv/
+venv/
+env/
+ENV/
+
+# === Proyectos de prueba de Alex ===
+# Bloqueamos carpetas de prueba comunes y cualquier proyecto generado
+MiPrimerProyecto/
+MiPaginaPro/
+test-*/
+temp-*/
+*.log
+
+# === IDEs y Sistema ===
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.bak
+*.swp
+
+# === WebStarter Específico ===
+# Ignoramos archivos de configuración local que no deben ser públicos
+.webstarter.json
+.env

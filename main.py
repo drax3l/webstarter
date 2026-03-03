@@ -1,4 +1,6 @@
-from webstarter.cli import run
+# main.py
+from webstarter.cli import app
 
 if __name__ == "__main__":
-    run()
+    # Ejecuta la aplicación Typer definida en cli.py
+    app()
